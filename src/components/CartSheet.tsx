@@ -198,9 +198,11 @@ ${lines}
                   Enviar Pedido 🍪
                 </button>
                 
-                <p className="text-xs text-center font-medium opacity-50">
-                  Coordinamos el pago y envío por WhatsApp
-                </p>
+                <div className="bg-gold/10 p-4 rounded-[2rem] border-2 border-gold/20 text-center">
+                  <p className="text-[0.7rem] font-bold uppercase tracking-widest text-primary/70 mb-1">Horario de Despacho</p>
+                  <p className="text-sm font-bold text-primary">12:00pm a 9:30pm 🍪🤎</p>
+                  <p className="text-[0.6rem] opacity-50 mt-1">Coordinamos el pago y envío por WhatsApp</p>
+                </div>
               </div>
             </div>
           )}

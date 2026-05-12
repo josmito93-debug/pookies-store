@@ -63,9 +63,12 @@ function Index() {
       {/* ═══════════════  HEADER  ═══════════════ */}
       <header className="sticky top-4 z-40 mx-auto max-w-5xl px-4 pointer-events-none">
         <div className="bg-cream/70 backdrop-blur-xl border-4 border-primary rounded-full px-6 py-3 flex items-center justify-between shadow-xl pointer-events-auto">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <span className="bg-accent w-3 h-3 rounded-full animate-pulse" />
-            <span className="text-[0.7rem] font-bold uppercase tracking-tighter text-primary/80 hidden sm:inline">Abierto Caracas</span>
+            <div className="flex flex-col -space-y-1">
+              <span className="text-[0.6rem] font-black uppercase tracking-tighter text-primary/60">Caracas · Delivery</span>
+              <span className="text-[0.7rem] font-bold text-primary">12:00pm a 9:30pm 🍪</span>
+            </div>
           </div>
           
           <img src={logo} alt="Pookies" className="h-9 brightness-0 hover:scale-110 transition-transform cursor-pointer"
@@ -113,6 +116,12 @@ function Index() {
           <div className="absolute top-0 right-0 bg-gold text-ink p-6 rounded-full border-4 border-ink shadow-2xl rotate-12 font-display text-lg uppercase tracking-tight flex flex-col items-center justify-center animate-bounce">
             <span>Recién</span>
             <span className="text-xs">Horneada</span>
+          </div>
+
+          <div className="absolute -bottom-8 -left-8 bg-accent text-white p-5 rounded-full border-4 border-white shadow-2xl -rotate-12 font-display text-sm uppercase tracking-tight flex flex-col items-center justify-center hover:rotate-0 transition-transform cursor-help">
+            <span className="text-xs opacity-80">Horario</span>
+            <span className="font-bold whitespace-nowrap">12pm - 9:30pm</span>
+            <span className="text-lg">🍪🤎</span>
           </div>
         </div>
       </section>
@@ -199,7 +208,11 @@ function Index() {
           <div className="space-y-4">
             <h4 className="text-3xl font-display text-gold">Contáctanos</h4>
             <p className="text-lg">WhatsApp: +58 422 7330247</p>
-            <p className="text-sm opacity-60">Caracas, Venezuela · Entregas de Lunes a Sábado</p>
+            <div className="bg-white/5 p-4 rounded-[2rem] border-2 border-white/10 inline-block">
+              <p className="text-sm font-bold text-gold uppercase tracking-widest mb-1">Horario de Atención</p>
+              <p className="text-xl font-medium">12:00pm a 9:30pm 🍪🤎</p>
+              <p className="text-xs opacity-50 mt-1">Caracas, Venezuela · Entregas de Lunes a Sábado</p>
+            </div>
           </div>
         </div>
         
