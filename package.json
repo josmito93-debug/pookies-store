@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && npm run postbuild",
     "postbuild": "JS_FILE=$(basename $(ls dist/client/assets/index-*.js | sort -r | head -n 1)) && CSS_FILE=$(basename $(ls dist/client/assets/styles-*.css | head -n 1)) && printf '<!DOCTYPE html><html><head><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><title>Pookies · Galletas Artesanales en Caracas</title><link rel=\"stylesheet\" href=\"/assets/%s\"></head><body><div id=\"root\"></div><script type=\"module\" src=\"/assets/%s\"></script></body></html>' \"$CSS_FILE\" \"$JS_FILE\" > dist/client/index.html",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
