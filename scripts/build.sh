@@ -26,4 +26,7 @@ cat <<EOF > dist/client/index.html
 </html>
 EOF
 
-echo "Generated dist/client/index.html pointing to $JS_NAME and $CSS_NAME"
+# 4. Create 404.html as a fallback for SPA routing
+cp dist/client/index.html dist/client/404.html
+
+echo "Generated dist/client/index.html and 404.html pointing to $JS_NAME and $CSS_NAME"
