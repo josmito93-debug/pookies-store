@@ -176,6 +176,32 @@ function Index() {
         </div>
       </section>
 
+      {/* ═══════════════  QUICK LINKS  ═══════════════ */}
+      <section className="max-w-4xl mx-auto px-6 py-24">
+        <div className="bg-cream/40 backdrop-blur-md border-4 border-primary/10 rounded-[3rem] p-10 text-center space-y-8 shadow-inner">
+          <h3 className="text-4xl text-primary">Enlaces Rápidos ✨</h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="#menu" className="group bg-white border-4 border-primary/5 px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-300 shadow-sm flex items-center gap-3">
+              <span className="text-2xl group-hover:rotate-12 transition-transform">🍪</span>
+              <span className="font-display uppercase tracking-wider text-sm">Ver Menú</span>
+            </a>
+            <a href="https://instagram.com" target="_blank" className="group bg-white border-4 border-primary/5 px-8 py-4 rounded-full hover:bg-accent hover:text-white transition-all duration-300 shadow-sm flex items-center gap-3">
+              <span className="text-2xl group-hover:scale-125 transition-transform">📸</span>
+              <span className="font-display uppercase tracking-wider text-sm">Instagram</span>
+            </a>
+            <a href="https://wa.me/584227330247" target="_blank" className="group bg-white border-4 border-primary/5 px-8 py-4 rounded-full hover:bg-green-500 hover:text-white transition-all duration-300 shadow-sm flex items-center gap-3">
+              <span className="text-2xl group-hover:animate-bounce transition-transform">💬</span>
+              <span className="font-display uppercase tracking-wider text-sm">WhatsApp</span>
+            </a>
+            <a href="#historia" className="group bg-white border-4 border-primary/5 px-8 py-4 rounded-full hover:bg-gold hover:text-ink transition-all duration-300 shadow-sm flex items-center gap-3">
+              <span className="text-2xl group-hover:-rotate-12 transition-transform">📖</span>
+              <span className="font-display uppercase tracking-wider text-sm">Nuestra Historia</span>
+            </a>
+          </div>
+          <p className="text-xs font-bold text-primary/40 uppercase tracking-[0.2em]">¡Conectemos en todos lados!</p>
+        </div>
+      </section>
+
       {/* ═══════════════  STORY  ═══════════════ */}
       <section id="historia" className="max-w-5xl mx-auto px-6 py-32" ref={storyReveal.ref}>
         <div className={`bg-accent text-accent-foreground rounded-[4rem] p-12 md:p-20 text-center space-y-8 shadow-2xl relative overflow-hidden transition-all duration-1000 ${storyReveal.visible ? "scale-100 opacity-100" : "scale-90 opacity-0"}`}>
